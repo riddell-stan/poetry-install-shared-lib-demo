@@ -3,6 +3,7 @@ name = "poetry-install-shared-lib-demo"
 version = "0.1.0"
 description = "How to build and distribute a C++ shared library inside a Python wheel using Poetry."
 authors = ["Allen Riddell <riddella+stan@indiana.edu>"]
+build = "build.py"
 
 [tool.poetry.dependencies]
 python = "^3.7"
@@ -11,5 +12,5 @@ python = "^3.7"
 pytest = "^5.2"
 
 [build-system]
-requires = ["poetry>=0.12"]
+requires = ["poetry>=0.12", "cython>=0.29"]
 build-backend = "poetry.masonry.api"
