@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "poetry-install-shared-lib-demo"
 version = "0.1.0"
-description = ""
-authors = ["Allen Riddell <riddella+stan@indiana.edu"]
+description = "How to build and distribute a C++ shared library inside a Python wheel using Poetry."
+authors = ["Allen Riddell <riddella+stan@indiana.edu>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"

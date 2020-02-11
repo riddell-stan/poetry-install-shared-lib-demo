@@ -1,0 +1,7 @@
+*.cpp
+*.egg-info
+*.so
+__pycache__
+build
+dist
+poetry.lock
