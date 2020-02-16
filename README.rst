@@ -37,10 +37,11 @@ manylinux2014 image::
 Now run the following commands::
 
     cd /io
+    alias python3=/opt/python/cp38-cp38/bin/python
     python3 -m pip install poetry
-    poetry build --format=wheel  # will fail, this is OK. See Note 1.
-    poetry run pip install Cython
-    poetry build --format=wheel
+    python3 -m poetry build --format=wheel  # will fail, this is OK. See Note 1.
+    python3 -m poetry run pip install Cython
+    python3 -m poetry build --format=wheel
     auditwheel repair dist/poetry_install_shared_lib_demo-0.1.0-cp37-cp37m-linux_x86_64.whl
 
 That's it. You should have a working, ``manylinux2014`` compliant wheel in
